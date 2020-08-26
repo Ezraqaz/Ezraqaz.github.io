@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>环工系新生信息查询系统</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./index_files/rainbow.min.css">
+<link rel="stylesheet" href="./index_files/material-icons.css">
+<link href="./index_files/style.min.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="http://ftp6267045.host108.abeiyun.cn/images/logo.ico" type="image/x-icon">
+<script type="text/javascript" src="./index_files/jquery-2.2.4.min.js.下载"></script>
+<script type="text/javascript" src="./index_files/fetch.min.js.下载"></script>
+<script type="text/javascript" src="./index_files/twt.fetch.min.js.下载"></script>
+<script type="text/javascript" src="./index_files/twt.script.min.js.下载"></script>
+<script type="text/javascript" src="./index_files/twt.header.sidebar.min.js.下载"></script>
+<script type="text/javascript" src="./index_files/script.min.js.下载"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+   		 var system = {};
+   		 var p = navigator.platform;
+   		 var u = navigator.userAgent;
+  		
+   		 system.win = p.indexOf("Win") == 0;
+   		 system.mac = p.indexOf("Mac") == 0;
+   		 system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+   		 if (system.win || system.mac || system.xll) {
+   		   if (u.indexOf('Windows Phone') > -1) {  
+  		
+   		   }else {
+   		     window.location.href = "lock.html";
+   		   }
+   		 }
+    </script>
+	<script>
+        var ua = navigator.userAgent.toLowerCase();
+        var isWeixin = ua.indexOf('micromessenger') != -1;
+        if (!isWeixin) {
+            window.location.href = "http://yxrh.xyz"
+        }
+		</script>
+  	
+
+	<img src="http://ftp6267045.host108.abeiyun.cn/images/giflogo.gif" alt="logo演绎" title="logo演绎" width=100%>
+	<br />
+	<br />
+	<h1 align="center">环工系2020新生信息查询</h1>
+	<div class="twt-card-block">
+                <h4 class="twt-card-title"><small class="twt-s-pull-r">
+					<a href="#"></a></small></h4>
+        <form id="loginForm" action="result.php" method="post">
+          <input name="token" type="hidden" value="ie4LPQC7ygZTzZTDkocgRoYF93SMx1Yupdv6n2eIqpc">
+          <fieldset class="twt-form-group twt-form-icon">
+              <input class="twt-form-control twt-form-control-material" name="name" id="name" value="" type="text" placeholder="姓名" required="">
+              <i class="twt-icon twt-icon-person"></i>
+          </fieldset>
+          <fieldset class="twt-form-group twt-form-icon">
+              <input class="twt-form-control twt-form-control-material" name="personalid" id="personalid" value="" type="text" placeholder="身份证号" required="">
+              <i class="twt-icon twt-icon-lock"></i>
+          </fieldset>
+          <div class="twt-m-y-2">
+            <button class="twt-btn twt-btn-success" type="submit">查询</button>
+<!--			  <button class="twt-btn twt-btn-success" type="submit">问题反馈</button>-->
+<!--            <a id="wechatLogin" class="twt-btn twt-btn-secondary" href="/auth/wechat">问题反馈</a>-->
+			  <a class="twt-btn twt-btn-primary" href="erro.html">问题反馈</a>
+			   <a id="wechatLogin" class="twt-btn twt-btn-secondary" href="adminlogin.html">管理页</a>
+          </div>
+        </form>
+<!--        <hr>-->
+<!--        <a class="#">问题反馈</a>-->
+	</div>
+	
+	<h5 style="color: grey;font-size: 12px;text-indent: 2em;">注意：身份证号码中含有字母“X”的，用数字“0”代替“X”。</h5>
+<!--	<h5 style="color: grey;font-size: 12px;text-indent: 2em;">①姓名中有标点符号的忽略，例如“A·B”写作“AB”；</h5>-->
+<!--	<h5 style="color: grey;font-size: 12px;text-indent: 2em;">②</h5>-->
+
+	<img src="http://ftp6267045.host108.abeiyun.cn/images/welcome.png" alt="欢迎关注一夕如环" title="欢迎关注一夕如环" class="gifqrcode" width=100%>
+	
+<!--	<div class="qrcode">-->
+<!--		<img src="http://ftp6267045.host108.abeiyun.cn/images/qrcode.jpg" alt="qrcode" title="qrcode">-->
+<!--	</div>-->
+	<br />
+	<br />
+	<br />
+	<h5 align="center" class="copyright">©一夕如环2020</h5>
+	
+</body>
+</html>
